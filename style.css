@@ -1,0 +1,349 @@
+:root {
+    --primary-teal: #2dd4bf;
+    --dark-teal: #0f766e;
+    --light-teal: #5eead4;
+    --text-dark: #1f2937;
+    --text-light: #6b7280;
+    --bg-light: #f8fafc;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    line-height: 1.6;
+    color: var(--text-dark);
+    background: linear-gradient(135deg, var(--primary-teal) 0%, var(--dark-teal) 100%);
+    min-height: 100vh;
+}
+
+/* Navigation */
+.navbar {
+    background: rgba(15, 118, 110, 0.95) !important;
+    backdrop-filter: blur(10px);
+    padding: 1rem 0;
+    transition: all 0.3s ease;
+}
+
+.navbar-brand .logo {
+    height: 40px;
+    width: auto;
+}
+
+.navbar-nav .nav-link {
+    color: white !important;
+    font-weight: 500;
+    margin: 0 1rem;
+    transition: color 0.3s ease;
+}
+
+.navbar-nav .nav-link:hover,
+.navbar-nav .nav-link.active {
+    color: var(--light-teal) !important;
+}
+
+/* Hero Section */
+.hero-section {
+    padding: 120px 0 80px;
+    color: white;
+}
+
+.hero-title {
+    font-size: 3rem;
+    font-weight: 700;
+    line-height: 1.2;
+    margin-bottom: 2rem;
+}
+
+.text-highlight {
+    color: var(--light-teal);
+}
+
+.hero-description {
+    font-size: 1.2rem;
+    line-height: 1.6;
+    opacity: 0.9;
+    max-width: 600px;
+}
+
+.image-grid img {
+    border-radius: 8px;
+    transition: transform 0.3s ease;
+    aspect-ratio: 1;
+    object-fit: cover;
+}
+
+.image-grid img:hover {
+    transform: scale(1.05);
+}
+
+/* What Drives Us Section */
+.drives-section {
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(10px);
+    color: white;
+}
+
+.section-title {
+    font-size: 2.5rem;
+    font-weight: 700;
+    margin-bottom: 2rem;
+}
+
+/* Ecosystem Section */
+.ecosystem-section {
+    background: white;
+    color: var(--text-dark);
+}
+
+.ecosystem-item {
+    border: 1px solid #e5e7eb;
+    border-radius: 12px;
+    overflow: hidden;
+    transition: all 0.3s ease;
+}
+
+.ecosystem-item:hover {
+    box-shadow: 0 10px 25px rgba(45, 212, 191, 0.1);
+    border-color: var(--primary-teal);
+}
+
+.ecosystem-header {
+    padding: 1.5rem;
+    cursor: pointer;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: linear-gradient(135deg, var(--primary-teal), var(--dark-teal));
+    color: white;
+}
+
+.ecosystem-header h4 {
+    margin: 0;
+    font-size: 1.2rem;
+    font-weight: 600;
+}
+
+.ecosystem-header p {
+    margin: 0.5rem 0 0 0;
+    opacity: 0.9;
+    font-size: 0.9rem;
+}
+
+.ecosystem-header i {
+    transition: transform 0.3s ease;
+}
+
+.ecosystem-header[aria-expanded="true"] i {
+    transform: rotate(180deg);
+}
+
+.ecosystem-content {
+    padding: 1.5rem;
+    background: #f8fafc;
+}
+
+/* Team Section */
+.team-section {
+    background: white;
+}
+
+.featured-member {
+    background: linear-gradient(135deg, var(--primary-teal), var(--dark-teal));
+    color: white;
+    padding: 2rem;
+    border-radius: 12px;
+}
+
+.team-photo {
+    border-radius: 50%;
+    width: 100%;
+    max-width: 200px;
+    height: auto;
+    aspect-ratio: 1;
+    object-fit: cover;
+}
+
+.team-card {
+    text-align: center;
+    padding: 1.5rem;
+    border-radius: 12px;
+    background: #f8fafc;
+    transition: all 0.3s ease;
+}
+
+.team-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 25px rgba(45, 212, 191, 0.1);
+}
+
+.team-card .team-photo {
+    width: 150px;
+    height: 150px;
+    margin: 0 auto 1rem;
+}
+
+.team-role {
+    color: var(--primary-teal);
+    font-weight: 600;
+    margin-bottom: 0.5rem;
+}
+
+/* Investors Section */
+.investors-section {
+    background: linear-gradient(135deg, var(--primary-teal), var(--dark-teal));
+    color: white;
+}
+
+.investor-card {
+    text-align: center;
+    padding: 1rem;
+    border-radius: 12px;
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(10px);
+    transition: all 0.3s ease;
+}
+
+.investor-card:hover {
+    transform: translateY(-5px);
+    background: rgba(255, 255, 255, 0.2);
+}
+
+.investor-photo {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    margin: 0 auto 1rem;
+    object-fit: cover;
+}
+
+.investor-role {
+    font-size: 0.9rem;
+    opacity: 0.8;
+}
+
+/* Advisors Section */
+.advisors-section {
+    background: white;
+}
+
+.advisor-card {
+    text-align: center;
+    padding: 1rem;
+    border-radius: 12px;
+    background: #f8fafc;
+    transition: all 0.3s ease;
+}
+
+.advisor-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 25px rgba(45, 212, 191, 0.1);
+}
+
+.advisor-photo {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    margin: 0 auto 1rem;
+    object-fit: cover;
+}
+
+.advisor-role {
+    color: var(--primary-teal);
+    font-size: 0.9rem;
+    font-weight: 600;
+}
+
+/* Footer */
+.footer-section {
+    background: var(--text-dark);
+    color: white;
+}
+
+.footer-logo {
+    height: 40px;
+    width: auto;
+}
+
+.footer-links {
+    list-style: none;
+    padding: 0;
+}
+
+.footer-links li {
+    margin-bottom: 0.5rem;
+}
+
+.footer-links a {
+    color: #d1d5db;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.footer-links a:hover {
+    color: var(--primary-teal);
+}
+
+.social-links a {
+    color: #d1d5db;
+    font-size: 1.5rem;
+    margin-right: 1rem;
+    transition: color 0.3s ease;
+}
+
+.social-links a:hover {
+    color: var(--primary-teal);
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .hero-title {
+        font-size: 2rem;
+    }
+    
+    .hero-description {
+        font-size: 1rem;
+    }
+    
+    .section-title {
+        font-size: 2rem;
+    }
+    
+    .ecosystem-header {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    
+    .ecosystem-header i {
+        position: absolute;
+        right: 1.5rem;
+        top: 1.5rem;
+    }
+}
+
+@media (max-width: 576px) {
+    .hero-section {
+        padding: 100px 0 60px;
+    }
+    
+    .image-grid .col-2 {
+        flex: 0 0 50%;
+        max-width: 50%;
+    }
+}
+
+/* Animation Classes */
+.fade-in {
+    opacity: 0;
+    transform: translateY(30px);
+    transition: all 0.6s ease;
+}
+
+.fade-in.visible {
+    opacity: 1;
+    transform: translateY(0);
+}
